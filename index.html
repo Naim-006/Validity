@@ -70,12 +70,20 @@
             font-size:12px;
             color:red;
         }
+        .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
     </style>
 </head>
 <body>
 
 <div class="container">
-    <marquee>*Fill up the form after sending Fee. </marquee><br>
+    <marquee>*Fill up the form if you are a BHNAPHS'ian 22</marquee><br>
     <h2>Confirmation Form </h2>
         <form action="https://formkeep.com/f/f61ea567aebf" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
         <div class="form-group">
@@ -83,15 +91,23 @@
             <input type="text" id="name" name="name" required>
         </div>
         <div class="form-group">
-            <label for="phone">Bkash/Nagad Number:</label>
+    <label for="option">Fee Sent By </label>
+    <select id="option" name="option" required>
+        
+        <option value="option1">Bkash</option>
+        <option value="option2">Nagad</option>
+    </select>
+</div>
+
+        <div class="form-group">
+            <label for="phone"> Number:</label>
             <input type="number" id="phone" name="phone" required>
         </div>
         <div class="form-group">
           <center> <input type="submit" value="Submit">
          <br> <br><br><br><hr>
-              <a href="developer.html"><sub>About Us</sub></a>
-         
-           </center>
+          <a href="developer.html"><sub>About Us</sub></a>
+          </center>
         </div>
     </form>
 </div>
