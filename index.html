@@ -77,6 +77,29 @@
     border-radius: 5px;
     box-sizing: border-box;
 }
+        .menu {
+        display: flex;
+        justify-content: center; /* Center align the menu */
+        margin-bottom: 20px;
+    }
+
+    .menu li {
+        list-style-type: none;
+        margin-right: 55px;
+    }
+
+    .menu li a {
+        
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer; /* Add cursor pointer for better UX */
+    }
+
+    #notice img {
+        max-width: 100%;
+        height: auto;
+    }
 
     </style>
 </head>
@@ -85,7 +108,7 @@
 <div class="container">
     <marquee>*Fill up the form if you are a BHNAPHS'ian 22</marquee><br>
     <h2>Confirmation Form </h2>
-        <form action="https://formkeep.com/f/f61ea567aebf" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
+        <form action="https://formkeep.com/f/3f5fe1af94aa" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -105,11 +128,34 @@
         </div>
         <div class="form-group">
           <center> <input type="submit" value="Submit">
-         <br> <br><br><br><hr>
+         <br> <br><br>
           <a href="developer.html"><sub>About Us</sub></a>
           </center>
         </div>
-    </form>
+    </form><br><br><hr>
+
+    <ul class="menu">
+        <li><a href="#" id="toggle-notice"><h4>NOTICE</h4></a></li>
+    </ul>
+
+    <div id="notice" style="display: none;">
+        <img id="notice-image" src="https://i.ibb.co/nCKn2TZ/Screenshot-2024-03-29-174528.png" alt="Notice Image">
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggle-notice').addEventListener('click', function() {
+        var noticeDiv = document.getElementById('notice');
+        var noticeImage = document.getElementById('notice-image');
+        if (noticeDiv.style.display === 'none' || noticeDiv.style.display === '') {
+            noticeDiv.style.display = 'block';
+            noticeImage.style.display = 'block';
+        } else {
+            noticeDiv.style.display = 'none';
+            noticeImage.style.display = 'none';
+        }
+    });
+</script>
 </div>
 
 </body>
