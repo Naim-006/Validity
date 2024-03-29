@@ -77,6 +77,29 @@
     border-radius: 5px;
     box-sizing: border-box;
 }
+        .menu {
+        display: flex;
+        justify-content: center; /* Center align the menu */
+        margin-bottom: 20px;
+    }
+
+    .menu li {
+        list-style-type: none;
+        margin-right: 55px;
+    }
+
+    .menu li a {
+        
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer; /* Add cursor pointer for better UX */
+    }
+
+    #notice img {
+        max-width: 100%;
+        height: auto;
+    }
 
     </style>
 </head>
@@ -111,6 +134,30 @@
         </div>
     </form>
 </div>
+    <br><br><hr>
+
+    <ul class="menu">
+        <li><a href="#" id="toggle-notice"><h4>NOTICE</h4></a></li>
+    </ul>
+
+    <div id="notice" style="display: none;">
+        <img id="notice-image" src="https://i.ibb.co/nCKn2TZ/Screenshot-2024-03-29-174528.png" alt="Notice Image">
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggle-notice').addEventListener('click', function() {
+        var noticeDiv = document.getElementById('notice');
+        var noticeImage = document.getElementById('notice-image');
+        if (noticeDiv.style.display === 'none' || noticeDiv.style.display === '') {
+            noticeDiv.style.display = 'block';
+            noticeImage.style.display = 'block';
+        } else {
+            noticeDiv.style.display = 'none';
+            noticeImage.style.display = 'none';
+        }
+    });
+</script>
 
 </body>
 </html>
