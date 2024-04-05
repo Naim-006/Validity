@@ -66,8 +66,8 @@
         .form-group input[type="submit"]:hover {
             background-color: #0056b3;
         }
-        marquee{
-            font-size:12px;
+        p2{
+            font-size:20px;
             color:red;
         }
         .form-group select {
@@ -106,46 +106,29 @@
 <body>
 
 <div class="container">
-    <marquee>*Fill up the form if you are a BHNAPHS'ian 22</marquee><br>
-    <h2>Confirmation Form </h2>
-       <form action="https://formkeep.com/f/f0d8da502e04"
-   accept-charset="UTF-8"
-   enctype="multipart/form-data"
-   method="POST">
- <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-    <label for="option">Fee Sent By </label>
-    <select id="option" name="option" required>
-        
-        <option value="Bkash">Bkash</option>
-        <option value="Nagad">Nagad</option>
-    </select>
-</div>
-
-        <div class="form-group">
-            <label for="phone"> Number:</label>
-            <input type="number" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-          <center> <input type="submit" value="Submit">
-         <br> <br><br>
-          <a href="developer.html"><sub>About Us</sub></a>
-          </center>
-        </div>
-    </form><br><br><hr>
-
     <ul class="menu">
         <li><a href="#" id="toggle-notice"><h4>NOTICE</h4></a></li>
     </ul>
 
     <div id="notice" style="display: none;">
-        <img id="notice-image" src="https://i.ibb.co/nCKn2TZ/Screenshot-2024-03-29-174528.png" alt="Notice Image">
+        <img id="notice-image" src="https://i.ibb.co/DMnnWXn/Screenshot-10.png" alt="Notice Image">
     </div>
-</div>
 
+<br>
+ 
+       <form action="https://formkeep.com/f/f0d8da502e04"
+   accept-charset="UTF-8"
+   enctype="multipart/form-data"
+   method="POST"><br><br>
+ 
+        <div class="form-group">
+          <center>
+          <a href="developer.html"><sub>About Us</sub></a>
+          </center>
+        </div>
+    </form>
+
+   
 <script>
     document.getElementById('toggle-notice').addEventListener('click', function() {
         var noticeDiv = document.getElementById('notice');
